@@ -1,0 +1,1007 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@700&family=Roboto:wght@300&display=swap');
+
+body {
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow: hidden; */
+}
+
+
+/* ------------------------------------ */
+
+.schedule{
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #4C3AFF;
+    font-weight: 400;
+    color: #fff;
+    z-index: 2000;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+
+}
+
+
+.schedule:hover {
+    cursor: pointer;
+    background-color: #362e95;
+}
+
+
+ul.headingText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul.headingText li {
+    position: relative;
+    list-style: none;
+}
+
+ul.headingText li a {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    font-size: 8rem;
+    text-decoration: none;
+    line-height: 8rem;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+ul.headingText li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+ul.headingText li a:hover::before {
+    width: 100%;
+}
+
+
+/* ------------------------------------ */
+
+
+.top {
+    background-color: #212529;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 6rem 0rem 6rem;
+}
+
+.h1s {
+    margin: 4rem 0rem 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#fullBody {
+    margin: 4rem 2rem 4rem 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 45%;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------ */
+
+
+
+
+.busSect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.busSectTopHolder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.busSectHeader{
+    width: calc(100% - 120px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.internshipsChunk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 0px 60px;
+    margin-bottom: 150px;
+}
+
+.internshipCard {
+    width: 90%;
+    max-width: 700px;
+    height: 550px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.internshipCard>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.internshipCard>div>img {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.internshipCard>div>p {
+    margin-top: 15px;
+    width: calc(100% - 20px);
+}
+
+.internshipCard>p {
+    width: 100%;
+    text-align: start;
+}
+
+.bold2 {
+    margin-top: 0px;
+}
+
+p {
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 25px;
+}
+
+h2 {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 20px;
+    
+
+}
+
+.holderDiv {
+    padding: 25px;
+    /* outline: 2px solid #212529; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#bigTs {
+    width: 275px;
+    height: 275px;
+    border-radius: 20%;
+    padding-right: 25px;
+}
+
+.section {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#tsLogo {
+    width: 20vw;
+    height: 5vw;
+    margin-bottom: 5px;
+}
+
+hr {
+    margin-top: 10px;
+    height: .5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+#hr1 {
+    background: rgb(67, 206, 162);
+    background: linear-gradient(90deg, rgba(67, 206, 162, 1) 0%, rgba(24, 90, 157, 1) 85%);
+    width: 100%;
+}
+
+#hr2 {
+    background: rgb(69, 104, 220);
+    background: linear-gradient(90deg, rgba(69, 104, 220, 1) 0%, rgba(176, 106, 179, 1) 100%);
+}
+
+h3 {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#speechifyText {
+    margin-left: 10px;
+}
+
+#speechifyImg {
+    width: 225px;
+    height: 225px;
+    border-radius: 20%;
+    margin-left: 20px;
+}
+
+#speechH3 {
+    color: #4c3aff;
+}
+
+#iowaH3 {
+    color: #000;
+}
+
+.iowaDiv {
+    width: 70%;
+    padding-left: 120px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------------ */
+
+
+#codeTop {
+    width: 100%;
+}
+
+
+h4 {
+    margin-top: 3rem;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #fff;
+    font-size: 24px;
+}
+
+.codeSect {
+    background-color: #212529;
+    padding: 2rem 0px 12rem 0px;
+}
+
+.codeSectInside {
+    margin: 2rem 0rem 4rem 0rem;
+    padding: 0px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.codeHeaderHolder{
+    padding-top: 2rem;
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.codeHeaderHolder h2{
+    font-size: 32px;
+}
+
+.codeHeaderHolder button{
+    color: #fff;
+    background-color: #4C3AFF;
+    font-size: 18px;
+    border-radius: 36px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 20px 50px 0px rgba(254, 254, 254, 0.2);
+}
+
+
+.codeHeaderHolder button:hover{
+    cursor: pointer;
+    background-color: #362e95;
+}
+
+#codeh2 {
+    color: white;
+}
+
+#codingChunks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 0px 60px;
+}
+
+.codingChunk-content{
+    width: 100%;
+    max-width: 700px;
+    padding: 15px;
+    outline: 2px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.75);
+    height: 100%;
+}
+
+.codingChunk {
+    flex-grow: 1;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.codingImage {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+
+.codingParagraph {
+    color: #fff;
+    font-size: 25px;
+}
+
+.bold {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 700;
+    margin-bottom: 1000px;
+    line-height: 50px;
+}
+
+.codingChunk a {
+    color: white;
+    font-size: 25px;
+    /* font-family: 'Roboto', sans-serif; */
+
+}
+
+.card-link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chevron {
+    width: 40px;
+    height: 40px;
+    filter: invert(98%) sepia(7%) saturate(6%) hue-rotate(161deg) brightness(105%) contrast(100%);
+}
+
+.chevron:hover {
+    filter: invert(45%) sepia(96%) saturate(5030%) hue-rotate(230deg) brightness(94%) contrast(110%);
+    transform: scale(1.3);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.mR {
+    margin-right: 15px;
+}
+
+
+
+.teenageTopStuff {
+    margin: 4rem 6rem 0rem 6rem;
+    width: 85%;
+}
+
+
+.teenager {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 400px;
+
+}
+
+#teenageContent {
+    width: 80%;
+}
+
+#iowaImage {
+    width: 225px;
+    height: 225px;
+    border-radius: 5%;
+}
+
+li {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 22px;
+    line-height: 32px;
+}
+
+
+/* ------------------------------------ */
+
+
+.bott {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4c3aff;
+    width: 100%;
+
+}
+
+.toph1 {
+    font-family: '', sans-serif;
+    font-size: 6rem;
+    color: #FFF;
+    padding-top: 15px;
+
+}
+
+.goodbye {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+
+}
+
+#byeImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 45%;
+}
+
+.label {
+    padding: 10px;
+    font-size: 18px;
+    color: #111;
+}
+
+
+h5 {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 32px;
+    color: #FFF;
+}
+
+.wave {
+    width: 75px;
+    height: 75px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+#waveDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ------------------------------------ */
+
+
+.copy-text {
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    width: 25vw;
+}
+
+.copy-text input.text {
+    padding: 10px;
+    font-size: 18px;
+    color: #555;
+    border: none;
+    outline: none;
+    padding-right: 50px;
+    width: 20vw;
+}
+
+.copy-text button {
+    background: #5569d4;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 25px;
+}
+
+.copy-text button:active {
+    background: #5569d4;
+}
+
+.copy-text button:before {
+    content: "Copied";
+    position: absolute;
+    top: -45px;
+    right: 0px;
+    background: #5569d4;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: none;
+}
+
+.copy-text button:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #5569d4;
+    transform: rotate(45deg);
+    display: none;
+}
+
+.copy-text.active button:before,
+.copy-text.active button:after {
+    display: block;
+}
+
+
+
+
+
+
+
+.custom-shape-divider-bottom-1645906219 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1645906219 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 144px;
+}
+
+.custom-shape-divider-bottom-1645906219 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.custom-shape-divider-bottom-1645906604 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1645906604 svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1.3px);
+    height: 191px;
+}
+
+.custom-shape-divider-bottom-1645906604 .shape-fill {
+    fill: #4C3AFF;
+}
+
+
+
+
+
+
+.custom-shape-divider-top-1645907307 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1645907307 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 84px;
+}
+
+.custom-shape-divider-top-1645907307 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+.custom-shape-divider-bottom-1645907450 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1645907450 svg {
+    position: relative;
+    display: block;
+    width: calc(102% + 1.3px);
+    height: 189px;
+}
+
+.custom-shape-divider-bottom-1645907450 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.bigMarginlEft{
+    margin-left: 80px;
+}
+
+.internshipDate{
+    font-style: italic;
+    font-size: 18px;
+}
+
+#linkedin:hover{
+    cursor: pointer;
+}
+
+#linkedin:hover .shape-fill-white{
+    fill: rgb(181,226,226);
+}
+
+
+.shape-fill-white{
+    fill: white;
+}
+
+
+.custom-shape-divider-top-1702400715 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1702400715 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 199px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1702400715 .shape-fill {
+    fill: #212529;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .codeHeaderHolder button{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    .internshipsChunk{
+        margin-top: -100px;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .internshipCard{
+        margin-bottom: 40px;
+        width: 90%;
+        height: auto;
+        box-shadow: none;
+    }
+    .internshipDate{
+        margin-top: 20px;
+    }
+
+    #codingChunks {
+        grid-template-rows: repeat(8, 1fr); /* Seven rows */
+        gap: 20px; /* Gap between grid items */
+        padding: 0px 0px;
+        margin: 1rem 2rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .internshipsChunk{
+        grid-template-rows: repeat(8, 1fr); /* Seven rows */
+        gap: 20px; /* Gap between grid items */
+        padding: 0px 0px;
+        margin: 1rem 2rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .codingChunk-content p{
+        font-size: 16px;
+    }
+
+    .codingChunk-content a{
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    
+    .codingChunk {
+        height: auto;
+    }
+    
+
+
+    .top {
+        flex-direction: column;
+        padding: 3rem 0rem 0rem 0rem;
+        overflow: hidden;
+    }
+
+    .h1s {
+        margin: 2rem 0 2rem 1rem;
+    }
+
+    ul.headingText li a {
+        font-size: 20vw;
+        line-height: 4rem;
+        color: #FFF;
+    }
+
+    ul.headingText li a::before {
+        display: none;
+    }
+
+    #fullBody {
+        margin: 1rem 1rem 8rem 1rem;
+        width: 80vw;
+        height: 125vw;
+        border-radius: 10% 30% 10% 30%;
+    }
+
+
+    .holderDiv {
+        width: 80%;
+        padding: 20px;
+        box-shadow: none;
+        flex-direction: column;
+    }
+
+    .section {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }    
+    h2 {
+        font-size: 8vw;
+    }
+
+    #tsLogo {
+        width: 60vw;
+        height: 15vw;
+    }
+
+    #bigTs {
+        width: 150px;
+        height: 150px;
+        border-radius: 25%;
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #speechifyImg {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    #speechifyText {
+        margin-left: 0rem;
+    }
+
+    .codeSect {
+        overflow: hidden;
+    }
+
+    .codeSectInside {
+        margin: 2rem 2rem 4rem 2rem;
+    }
+
+    .codingChunk {
+        width: 95%;
+        margin-bottom: 3rem;
+    }
+
+    h4 {
+
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 1.5rem;
+        margin: 0rem 3rem 0rem 3rem;
+
+    }
+
+    .teenager {
+        overflow: hidden;
+    }
+
+    .teenageTopStuff {
+        margin: 2rem 2rem 4rem 2rem;
+    }
+
+    #teenageContent {
+        margin: 0rem;
+        flex-direction: column;
+    }
+
+    #iowaH3{
+        margin-top: 40px;
+        font-size: 28px;
+    }
+
+
+    .goodbye {
+        flex-direction: column;
+    }
+
+    .bott {
+        overflow: hidden;
+    }
+
+
+    .copy-text {
+        display: none;
+    }
+
+    h5 {
+        display: none;
+    }
+
+    #byeImg {
+        margin: 4rem 0rem 4rem 0rem;
+    }
+
+    .bigMarginlEft{
+        margin-left: 0px;
+    }
+
+    .iowaDiv {
+        width: 120%;
+        padding-left: 0px;
+        padding-top: 20px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-bottom: -100px;
+    }
+
+    .iowaDiv li{
+        margin-top: 20px;
+    }
+
+}
